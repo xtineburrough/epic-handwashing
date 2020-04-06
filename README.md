@@ -1,7 +1,7 @@
 # epic-handwashing
 Epic Hand Washing in the Time of Lost Narratives
-Project by xtine burrough and Sabrina Starnaman
-Technical Direction (all the fancy code) by Dale MacDonald, meager HTML/CSS by xtine
+is a project by xtine burrough and Sabrina Starnaman with
+Technical Direction (all the fancy code) by Dale MacDonald, and meager HTML/CSS by xtine
 
 Artist Statement:
 Epic Hand Washing in the Time of Lost Narratives, by xtine burrough and Sabrina Starnaman, is a speculative remix that confronts Epic Kitchens, a dataset of first-person cooking videos, with quotes from literature written during or about prior pandemics  such as the bubonic plague and the global influenza pandemic of 1918-19. 
