@@ -5,11 +5,11 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 xtine burrough and Sabrina Starnaman
-Technical Direction by Dale MacDonald
+with Technical Direction by Dale MacDonald
 
-Epic Hand Washing in the Time of Lost Narratives  by xtine burrough and Sabrina Starnaman is a speculative remix that confronts Epic Kitchens, a dataset of first-person cooking videos, with quotes from literature written during or about prior pandemics  such as the bubonic plague and the global influenza pandemic of 1918-19. 
+*Epic Hand Washing in the Time of Lost Narratives*  by xtine burrough and Sabrina Starnaman is a speculative remix that confronts Epic Kitchens, a dataset of first-person cooking videos, with quotes from literature written during or about prior pandemics such as the bubonic plague and the global influenza pandemic of 1918-19. 
 
-Epic Hand Washing in the Time of Lost Narratives reveals the arbitrary nature of information preservation and highlights the constructed nature of digitised materials. Blurring the lines between art and archive, or information and dataset, this project furthers discourse about the digital dataset as an authority of knowledge curation.
+*Epic Hand Washing in the Time of Lost Narratives* reveals the arbitrary nature of information preservation and highlights the constructed nature of digitised materials. Blurring the lines between art and archive, or information and dataset, this project furthers discourse about the digital dataset as an authority of knowledge curation.
 
 Moreover, when we are experiencing a once-in-a-lifetime global event, humanity loses its narrative and only constructs one over time. This project explores how these narratives and the mundane work of living day to day in isolation are both at play in our lived experience. What might appear as an everyday action in the original dataset becomes charged with contemporary worldwide conversations in burrough's and Starnaman's work.  
 
