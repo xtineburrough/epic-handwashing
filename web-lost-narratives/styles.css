@@ -1,0 +1,729 @@
+@charset "UTF-8";
+* { 
+	margin: 0;
+	padding: 0;
+}
+	@font-face {
+  font-family: "Roboto-Medium";
+  src: url(fonts/Roboto-Medium.ttf);
+  }
+@font-face {
+  font-family: "MomsTypewriter";
+  src: url(fonts/Momstypewriter.ttf);
+  }
+@font-face {
+	font-family: "Assistant-semibold";
+	src: url(fonts/Assistant-SemiBold.ttf); 
+}
+
+#bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%; 
+  min-height: 100%;
+}
+body {
+	margin: 0; /*seems i shouldn't need this since i used the universal selector but trying to eliminate any space at all on the page and am getting a weird one beneath each div */
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	 background: #000;
+	 overflow: hidden;
+	 max-width: 1920px;
+	 max-height: 1080px;
+}
+
+#wrap {
+	width: 100%;
+	height: 100%;
+		background: rgba(97,200,209,1.00); /*cyan*/
+}
+.clear {
+	clear: both;
+}
+.journalism {
+	font-family: "MomsTypewriter", courier, Times New Roman, Baskerville, "serif";
+	color: rgba(167,24,26,1.00); /*red */
+	font-size: calc(60px + (110 - 60) * ((100vw - 800px) / (1920 - 800)));
+}
+.literature {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-style: italic; 
+	font-variant-ligatures: normal;
+	font-weight: 600;
+	color: rgba(215,215,8,1.00); /* gold */
+	/*font-size: 170px;*/
+	font-size: calc(70px + (110 - 70) * ((100vw - 800px) / (1920 - 800)));
+}
+.socialmedia {
+	font-family: "Roboto-Medium", "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: rgba(70,180,176,1.00); /* blue */
+	font-size: calc(70px + (110 - 70) * ((100vw - 800px) / (1920 - 800)));
+}
+.journalism-tag {
+	background-color: rgba(167,24,26,1.00); /*red */
+}
+.literature-tag {
+	background-color: rgba(215,215,8,1.00); /* gold */
+}
+.socialmedia-tag {
+	background-color: rgba(70,180,176,1.00); /* blue */
+}
+.smaller {
+	font-size: smaller;
+}
+.poetry {
+	font-size: 28pt;
+}
+
+/*//////////// divs for videos //////////////*/
+
+.div-1 {
+	width: 3072px;
+	height: 2732px;
+	background: #000;
+	float: left;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	overflow: hidden;
+	transition: opacity 1s linear; /* try this transition across all videos? */
+}
+.div-2 {
+	width: 1536px;
+	height: 1366px;
+	background: #000;
+	float: left;
+}
+.div-4 {
+	width: 768px;
+	height: 683px;
+	background: #000;
+	float: left;
+}
+.div-8 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	float: left;
+}
+
+/* /////  bottom layout containers for 1/8 div sizes  /// */
+.div-8-bottom01 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 0px;
+}
+.div-8-bottom02 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 384px;
+}
+.div-8-bottom03 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 768px;
+}
+.div-8-bottom04 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 1152px;
+}
+.div-8-bottom05 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 1536px;
+}
+.div-8-bottom06 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 1920px;
+}
+.div-8-bottom07 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 2304px;
+}
+.div-8-bottom08 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 2688px;
+}
+
+/* /////   TOP div layout containers for 1/8 size   ///  */
+
+.div-8-top01 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 0px;
+}
+.div-8-top02 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 384px;
+}
+.div-8-top03 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 768px;
+}
+.div-8-top04 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 1152px;
+}
+.div-8-top05 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 1536px;
+}
+.div-8-top06 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 1920px;
+}
+.div-8-top07 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 2304px;
+}
+.div-8-top08 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 2688px;
+}
+
+/*   //////  middle div layout containers for 1/8 size - SECOND ROW  //////    */
+.div-8-mid1-01 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 0px;
+}
+.div-8-mid1-02 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 384px;
+}
+.div-8-mid1-03 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 765px;
+}
+.div-8-mid1-04 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 1152px;
+}
+.div-8-mid1-05 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 1536px;
+}
+.div-8-mid1-06 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 1915px;
+}
+.div-8-mid1-07 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 2300px;
+}
+.div-8-mid1-08 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 2688px;
+}
+
+/*   //////  middle div layout containers for 1/8 size - THIRD ROW  //////    */
+.div-8-mid2-01 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 0px;
+}
+.div-8-mid2-02 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 384px;
+}
+.div-8-mid2-03 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 765px;
+}
+.div-8-mid2-04 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 1152px;
+}
+.div-8-mid2-05 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 1536px;
+}
+.div-8-mid2-06 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 1915px;
+}
+.div-8-mid2-07 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 2300px;
+}
+.div-8-mid2-08 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:684px;
+	left: 2688px;
+}
+/*   //////  middle div layout containers for 1/8 size - SIXTH ROW  //////    */
+.div-8-mid6-02 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2052px;
+	left: 384px;
+}
+.div-8-mid6-04 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2052px;
+	left: 1152px;
+}
+.div-8-mid6-06 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2052px;
+	left: 2300px;
+}
+.div-8-mid6-07 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2052px;
+	left: 2685px;
+}
+/*   //////  middle div layout containers for 1/8 size - SEVENTH ROW  //////    */
+.div-8-mid7-02 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2394px;
+	left: 384px;
+}
+.div-8-mid7-04 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2394px;
+	left: 1152px;
+}
+/* //// CENTER 1/8 VIDS VERTICALLY  ////  */
+.center-8-top1 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: 1344px; /* (3072-384) / 2 */
+}
+
+.center-8-top2 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:342px;
+	left: 1344px; /* (3072-384) / 2 */
+}
+
+.center-8-top6 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2052px;
+	left: 1344px; /* (3072-384) / 2 */
+}
+.center-8-top7 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:2394px;
+	left: 1344px; /* (3072-384) / 2 */
+}
+.center-8-top8 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top: 2390px;
+	left: 1344px; /* (3072-384) / 2 */
+}
+
+/*  //// CENTER 1/8 VIDS HORIZONTALLY /// */
+.center-8-left1 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:1195px; /* (2732-342)/2 */
+	left: 0; 
+}
+.center-8-left2 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:1195px; /* (2732-342)/2 */
+	left: 384px; 
+}
+
+.center-8-left3 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:1195px; /* (2732-342)/2 */
+	left: 1152px; 
+}
+.center-8-left4 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:1195px; /* (2732-342)/2 */
+	left: 1536px; 
+}
+.center-8-left5 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:1195px; /* (2732-342)/2 */
+	left: 1920px; 
+}
+.center-8-left6 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:1195px; /* (2732-342)/2 */
+	left: 2304px; 
+}
+.center-8-left7 {
+	width: 384px;
+	height: 342px;
+	background: #000;
+	position: absolute;
+	top:1195px; /* (2732-342)/2 */
+	left: 2688px; 
+}
+
+/* ////// CENTER A 1/2 VID //// */
+.center-half-vid {
+	width: 60%; /*768px;*/
+	/*height: 684px;*/
+	/* background: #000; */
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.center-center-vid {
+	display: inline-block; 
+margin: 0 auto;
+}
+
+
+.div-16 {
+	width: 192px;
+	height: 171px;
+	background: #000;
+	float: left;
+}
+
+/* ///// divs for text //////////////*/
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 3000ms;
+}
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 2000ms;
+  transition-delay: 1000ms;
+}
+
+.verb {
+	padding: 12px 25px ;
+	position: fixed;
+	z-index: 4;
+	top: 0;
+	left: 1361px;  /* (3072-300) / 2 */
+	width: 300px;
+	text-align: center;
+	font-family: "Roboto-Medium", "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: #000;
+	font-size: 60px;
+	animation-name: fadein;
+	animation-duration: 2s ;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+
+.div-top-text {
+	width: 100%; 
+	background: rgba(0,0,0,0.0);
+	height: 100%;
+	/* max-height: 2732px; */
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: fadein;
+	animation-duration: 2s ;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+.div-top-fade-in {
+	animation-name: fadein;
+	animation-duration: 2s ;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.div-top-fade-out {
+	animation-name: fadeout;
+	animation-duration: 1s ;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes dark {
+	from { opacity: 0;  }
+	to { opacity: 0; }
+}
+.div-top-text p {
+	width: 70%; /* take away 120px to account for padding */
+	max-height: 60%; 
+	z-index: 3;
+	/* font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";*/
+	
+	/*color: rgba(221,199,199,1.00);  very pale pink */
+	/* color: rgba(249,93,96,1.00); /* muted red */
+	/* color: rgba(215,215,8,1.00); /* gold */
+	/* margin: 0 1%; */
+	/* position: relative;
+	top: 0;
+	left: 0; */
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.delayed-video {
+	display: block;
+}
+
+.body-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 3;
+	height: 100px;
+	margin: 5%;
+	transform: rotate(-5deg);
+	}
+.body-text a {
+	font-family: 'Playfair Display SC', serif;
+	text-decoration: none;
+	color: rgba(232,232,221,1.00);
+	background-color: rgba(7,52,156,0.40);
+}
+.short {
+	margin: 20%;
+	padding: 4px;
+	font-size: 7.5vw;
+	width: calc(100% -90px);
+}
+.middle {
+	margin: 15%;
+	padding: 6px;
+	font-family: 'Playfair Display SC', serif;
+	text-decoration: none;
+	color: rgba(232,232,221,1.00);
+	background-color: rgba(7,52,156,0.40);
+	font-size: 5vw;
+	width: calc(100% - 90px);
+}
+.long {
+	margin: 12%;
+	padding: 6px;
+	font-family: 'Playfair Display SC', serif;
+	text-decoration: none;
+	color: rgba(232,232,221,1.00);
+	background-color: rgba(7,52,156,0.40);
+	font-size: 3vw;
+	width: calc(100% - 40px);
+}
+.clrflt {
+	clear: both;
+}
+
+/* Accordion code */
+#accordion {
+   width: 100%;
+   height: 12px;
+   margin: 0;
+   padding: 0; 
+   position: fixed;
+   bottom: 0;
+   right: 0px;
+   z-index:5;
+   opacity: .4;
+   background-color:rgba(7,52,156,0.80);
+   font-family: Verdana, Geneva, sans-serif;
+   }
+#accordion:hover {
+	height: 100px;
+	overflow: scroll;
+	opacity: .85;
+   }
+#accordion p {
+	font-size: .8em;
+	height: 100%;
+	margin: 1em;
+	color: rgba(232,232,221,1.00);
+}
+#accordion a {
+	height: 100%;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+	color: rgba(228,228,197,1.00);
+}
+

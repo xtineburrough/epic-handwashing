@@ -1,0 +1,9 @@
+filename	verb	noun	vimeoName	bugavoidinglastframeonline
+wash_hand_P31_08	wash	hand	400671074	hmmm
+
+wash_hand_P31_09	wash	hand	400671028	hmmm
+
+wash_hand_P31_13	wash	hand	400670988	hmmm
+
+wash_handmy_P21_01	wash	handmy	400671127	hmmm
+
