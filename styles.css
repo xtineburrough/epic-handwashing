@@ -710,7 +710,7 @@ margin: 0 auto;
    font-family: Verdana, Geneva, sans-serif;
    }
 #accordion:hover {
-	height: 100px;
+	height: 130px;
 	overflow: scroll;
 	opacity: .85;
    }
