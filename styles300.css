@@ -125,7 +125,7 @@ ul::before {
 	font-size: 20px;
 }
 #accordion:hover {
-	height: 530px;
+	height: 370px;
 	overflow: scroll;
 	opacity: .85;
    }
