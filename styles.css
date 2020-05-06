@@ -125,7 +125,7 @@ ul::before {
 	font-size: 20px;
 }
 #accordion:hover {
-	height: 230px;
+	height: 390px;
 	overflow: scroll;
 	opacity: .85;
    }
@@ -144,8 +144,7 @@ ul::before {
 	color: rgba(232,232,221,1.00);
 	text-align: left;
 }
-#accordion li.white {
-	background-color: #fff;
+#accordion li.logo {
 	text-align: center;
 	padding: 1em 0;
 }
