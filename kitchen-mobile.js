@@ -130,10 +130,10 @@ let bgCenter2up = [
 				];
 
 let videoDivsBySize = 
-					{ "_1up" : '<video width="3072" height="2732"   playsinline loop  muted >\n',
-					 "_2up" : '<video width="1536" height="1366"   playsinline loop  muted >\n',
-					 "_4up" : '<video width="768" height="684"   playsinline loop  muted >\n',
-					 "_8up" : '<video width="384" height="342"   playsinline loop  muted >\n'};
+					{ "_1up" : '<video width="3072" height="2732"   loop  muted >\n',
+					 "_2up" : '<video width="1536" height="1366"   loop  muted >\n',
+					 "_4up" : '<video width="768" height="684"   loop  muted >\n',
+					 "_8up" : '<video width="384" height="342"   loop  muted >\n'};
 
 let vimeoDivsBySize = 
 {
@@ -218,7 +218,7 @@ function getParameterByName(name, url) {
 }
 
 let nextLine = parseInt(getParameterByName('start'));
-let videoSource = getParameterByName('videosource');
+let videoSource = 'vimeo'; //getParameterByName('videosource');
 let sortedByVerbs = {}
 let usedByVerbs = {}
 
@@ -297,10 +297,8 @@ function populateVideoDivs(videoList, layout) {
 			let nextVideo = videoList[Math.floor(Math.random()*videoList.length)];
 			returndivs += '<div class="delayed-video ' + layout[newdiv]['class'] + '">\n'
 			returndivs += videoDivsBySize['_' + layout[newdiv]['size']];
-	  		returndivs += '<source src="epic-hand-wash-videos/' + nextVideo
-			// TODO this needs to be cleaned up for web version 
-	  		// returndivs += '_'  + layout[newdiv]['size']
-	  		returndivs += '.mp4" type="video/mp4">\n</video>\n</div>\n';
+	  		returndivs += '<source src="clips/timed_30/' + nextVideo + '_' 
+	  			+ layout[newdiv]['size'] + '.MP4" type="video/mp4">\n</video>\n</div>\n';
 		}
 	} else {
 		for (const newdiv in layout) {
@@ -385,9 +383,7 @@ function runExhibit(database) {
 	let delayedVideoDivs = document.getElementsByClassName("delayed-video");
 	for (var delayedVideoDiv = 0;  delayedVideoDiv < delayedVideoDivs.length; delayedVideoDiv++) {
 		let newVideoDiv = delayedVideoDivs[delayedVideoDiv].getElementsByTagName('video')[0];
-		if (videoSource != 'vimeo') {
-			newVideoDiv.oncanplaythrough = enqueueVideo ; 
-		}
+		//newVideoDiv.oncanplaythrough = enqueueVideo ; 
 	}
 	let textdiv = document.getElementById('quote-text');
 	textdiv.classList.remove('short','middle','long');
