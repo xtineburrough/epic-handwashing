@@ -1,0 +1,258 @@
+@charset "UTF-8";
+html {
+	width: 100%;
+	height: 100%;
+}
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+#video-block {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+video {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+body {
+	margin: 0; /*seems i shouldn't need this since i used the universal selector but trying to eliminate any space at all on the page and am getting a weird one beneath each div */
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	overflow: hidden;
+}
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+
+.delayed-video {
+	display: block;
+}
+.body-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 3;
+	height: 100px;
+	margin: 5%;
+	transform: rotate(-5deg);
+	max-width: 1530px;
+	overflow: visible;
+	}
+.body-text a {
+	font-family: 'Playfair Display SC', serif;
+	text-decoration: none;
+	color: rgba(232,232,221,1.00);
+	background-color: rgba(7,52,156,0.40);
+}
+.short {
+	margin: 20%;
+	padding: 4px;
+	font-size: 7.5vw;
+	width: calc(100% -90px);
+}
+.middle {
+	margin: 15%;
+	padding: 4px;
+	font-family: 'Playfair Display SC', serif;
+	text-decoration: none;
+	color: rgba(232,232,221,1.00);
+	background-color: rgba(7,52,156,0.40);
+	font-size: 4.5vw;
+	width: calc(100% - 90px);
+}
+.long {
+	margin: 12%;
+	padding: 6px;
+	font-family: 'Playfair Display SC', serif;
+	text-decoration: none;
+	color: rgba(232,232,221,1.00);
+	background-color: rgba(7,52,156,0.40);
+	font-size: 3vw;
+	width: calc(100% - 40px);
+}
+.clrflt {
+	clear: both;
+}
+
+/* Accordion code */
+#accordion {
+   width: 100%;
+   margin: 0 auto;
+	height: 30px;
+	text-align: center;
+   padding: 0; 
+   position: fixed;
+   bottom: 0;
+   z-index:5;
+   opacity: .4;
+   /* background-color:rgba(7,52,156,0.80); purple bg */
+	background-color: #000;
+   font-family: Verdana, Geneva, sans-serif;
+   }
+ul {
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul::before {
+    text-align: center;
+	/*color: rgba(193,198,220,1.00);*/
+	color: rgba(253,225,23,1.00);
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bolder;
+    content:"+";
+	font-size: 20px;
+}
+#accordion:hover {
+	height: 390px;
+	overflow: scroll;
+	opacity: .85;
+   }
+#accordion p {
+	font-size: 1em;
+	height: 100%;
+	max-width: 1280px;
+	margin: 1em auto;
+	color: rgba(232,232,221,1.00);
+}
+#accordion li {
+	font-size: 1em;
+	height: 100%;
+	max-width: 1280px;
+	margin: 1em auto;
+	color: rgba(232,232,221,1.00);
+	text-align: left;
+	padding: 0 1.5em;
+}
+#accordion li.logo {
+	text-align: center;
+	padding: 1em 0;
+}
+#accordion a {
+	height: 100%;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+	color: rgba(228,228,197,1.00);
+}
+
+/* for mobile */
+
+
+@media only screen /*iphone 4 and 4s */
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+}
+
+@media screen /* galaxy S3 */
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+/* ----------- Google Pixel ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+/* ----------- Google Pixel XL ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+/* ----------- HTC One ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+/* ----------- Windows Phone ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) {
+
+}

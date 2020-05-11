@@ -149,6 +149,8 @@ ul::before {
 }
 
 /* for mobile */
+
+
 @media only screen /*iphone 4 and 4s */
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
